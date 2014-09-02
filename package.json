@@ -1,0 +1,38 @@
+{
+  "name": "redis-twins",
+  "description": "Simple redis pub/sub interface wrapped in a singleton",
+  "version": "0.1.0",
+  "author": "Hugo Müller <hmuller.pops@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HugoMuller/redis-twins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HugoMuller/redis-twins/issues"
+  },
+  "homepage": "https://github.com/HugoMuller/redis-twins",
+  "keywords": [
+    "redis",
+    "pub/sub",
+    "pubsub",
+    "singleton"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -u bdd -R spec"
+  },
+  "main": "redis-twins.js",
+  "dependencies": {
+    "redis": "~0.12.1"
+  },
+  "devDependencies": {
+    "should": "~4.0.4"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
