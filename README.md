@@ -1,6 +1,8 @@
 redis-twins
 ===========
 
+[![NPM version](https://badge.fury.io/js/redis-twins.png)](http://badge.fury.io/js/redis-twins)
+
 Simple redis pub/sub interface wrapped in a singleton.  
 redis-twins brings together two redis clients: one in REGULAR mode, the second in SUBSCRIBER mode.  
 The goal is to use two clients as one. This single client can send regular AND subscriber commands.
@@ -68,11 +70,6 @@ You need to install this framework in order to run the tests:
 Then, to run the tests, simply do:
 
     npm test
-
-TODO
-----
-
-Upload the module on npmjs.org
 
 License
 -------
