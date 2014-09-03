@@ -7,7 +7,7 @@ The goal is to use two clients as one. This single client can send regular AND s
 
 -------
 
-Installation (redis-twins is not on npmjs.org yet...)
+Installation
 ------------
 
     npm install redis-twins
