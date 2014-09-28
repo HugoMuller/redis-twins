@@ -1,7 +1,7 @@
 {
   "name": "redis-twins",
   "description": "Simple redis pub/sub interface wrapped in a singleton",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Hugo Müller <hmuller.pops@gmail.com>",
   "license": "MIT",
   "private": false,
