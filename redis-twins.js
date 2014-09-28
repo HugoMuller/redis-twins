@@ -23,10 +23,10 @@ var onMessage = function(channel, message){
   else console.log('Redis-twins has no action associated to channel', channel);
 };
 
-var Rediscom = function(){
-  if(Rediscom.prototype.__instance) return Rediscom.prototype.__instance;
+var RedisTwins = function(){
+  if(RedisTwins.prototype.__instance) return RedisTwins.prototype.__instance;
 
-  Rediscom.prototype.__instance = this;
+  RedisTwins.prototype.__instance = this;
   // actions to perform when receiving a message
   this.callbacks = {};
   // redis client in REGULAR mode
@@ -44,13 +44,13 @@ var Rediscom = function(){
   return this;
 };
 // shorthand for subscribing the subscriber client and adding the callback
-Rediscom.prototype.subscribe = function(channel, callback){
+RedisTwins.prototype.subscribe = function(channel, callback){
   this.subscriber.subscribe(channel);
   this.callbacks[channel] = callback;
 };
 
 module.exports = (function(){
-  function _Rediscom(args){ return Rediscom.apply(this, args); }
-  _Rediscom.prototype = Rediscom.prototype;
-  return function(){ return new _Rediscom(arguments); };
+  function _RedisTwins(args){ return RedisTwins.apply(this, args); }
+  _RedisTwins.prototype = RedisTwins.prototype;
+  return function(){ return new _RedisTwins(arguments); };
 })();

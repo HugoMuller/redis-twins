@@ -20,13 +20,13 @@ Usage
 You can pass your conf arguments as if you were using the redis.createClient method:
 
     // default arguments
-    var redis = require('redis-twins')(); // eq: var redis = require(6379, '127.0.0.1', {});
+    var redis = require('redis-twins')(); // eq: var redis = require('redis-twins')(6379, '127.0.0.1', {});
     // default port and host, custom options
-    var redis = require(options); // eq: var redis = require(6379, '127.0.0.1', options);
+    var redis = require(options); // eq: var redis = require('redis-twins')(6379, '127.0.0.1', options);
     // unix socket with options
-    var redis = require(unix_socket, options);
+    var redis = require('redis-twins')(unix_socket, options);
     // custom port, host and options
-    var redis = require(port, host, options);
+    var redis = require('redis-twins')(port, host, options);
     
 ###Using regular commands
 

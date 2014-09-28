@@ -5,7 +5,7 @@ var redis  = require('../redis-twins')();
 var redis2 = require('../redis-twins')();
 
 describe('<Unit Test>', function(){
-  describe('Module Rediscom', function(){
+  describe('Module RedisTwins', function(){
     var channels = ['rediscom:test1', 'rediscom:test2'];
     before(function(ready){
       redis.subscriber.subscribe(channels[0]);
@@ -14,7 +14,7 @@ describe('<Unit Test>', function(){
     });
 
     describe('Pub/sub process', function(){
-      it('should work', function(done){
+      it('should subscribe to a channel and publish a message on it', function(done){
         this.timeout(1000);
         redis.subscribe(channels[1], function(message){
           message.should.equal('this is a test');
