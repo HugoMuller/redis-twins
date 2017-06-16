@@ -62,7 +62,7 @@ It is a shorthand for:
 Running tests
 -------------
 
-Unit Tests are run with [mocha](http://visionmedia.github.io/mocha/).
+Unit Tests are run with [mocha](http://mochajs.org/).
 You need to install this framework in order to run the tests:
     
     npm install mocha -g
